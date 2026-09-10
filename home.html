@@ -1,19 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sagar Yadav — Software Test Engineer and QA Engineer with mobile modem, network, RF, and connectivity testing expertise." />
+  <title>Sagar Yadav | Software Test Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#07131e; --surface:#0c1f2d; --surface-2:#102a3b; --text:#f1f8fb; --muted:#a9bdc8; --aqua:#57e6e0; --blue:#5bbcff; --line:rgba(171,224,237,.16); }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--text); background:var(--bg); font-family:Manrope,Arial,sans-serif; overflow-x:hidden; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; background:radial-gradient(circle at 84% 6%,rgba(46,185,211,.18),transparent 28%),radial-gradient(circle at 12% 45%,rgba(67,127,255,.12),transparent 24%); z-index:-1; }
+    a { color:inherit; text-decoration:none; } .container { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    nav { height:76px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); } .brand { font:500 16px 'DM Mono',monospace; color:var(--aqua); } .nav-links { display:flex; gap:25px; color:var(--muted); font-size:14px; } .nav-links a:hover { color:var(--aqua); }
+    .hero { min-height:620px; padding:100px 0 80px; display:grid; grid-template-columns:1.25fr .75fr; gap:55px; align-items:center; } .eyebrow { color:var(--aqua); font:500 13px 'DM Mono',monospace; text-transform:uppercase; letter-spacing:1.5px; } h1 { font-size:clamp(42px,6vw,76px); line-height:1.06; margin:18px 0; letter-spacing:-3px; } h1 span { color:var(--aqua); } .hero p { color:var(--muted); font-size:18px; line-height:1.75; max-width:680px; } .actions { display:flex; flex-wrap:wrap; gap:13px; margin-top:32px; }
+    .button { display:inline-flex; align-items:center; gap:8px; padding:13px 19px; border-radius:9px; font-weight:700; font-size:14px; transition:.2s ease; } .button.primary { background:var(--aqua); color:#062029; } .button.primary:hover { transform:translateY(-2px); box-shadow:0 9px 25px rgba(87,230,224,.2); } .button.secondary { border:1px solid var(--line); color:var(--text); } .button.secondary:hover { border-color:var(--aqua); }
+    .terminal { position:relative; border:1px solid var(--line); border-radius:15px; overflow:hidden; background:rgba(8,26,38,.84); box-shadow:0 25px 60px rgba(0,0,0,.27); } .terminal-head { display:flex; gap:7px; padding:14px 17px; border-bottom:1px solid var(--line); } .dot { width:10px;height:10px;border-radius:50%;background:#ff7065 }.dot:nth-child(2){background:#f5c451}.dot:nth-child(3){background:#57e6a2} .terminal-body { padding:26px 25px; font:14px/1.85 'DM Mono',monospace; color:#d9eef3; } .prompt { color:var(--aqua); }.blue { color:var(--blue); }.dim { color:#7693a2; }
+    section { padding:88px 0; border-top:1px solid var(--line); } .section-label { font:500 13px 'DM Mono',monospace; color:var(--aqua); letter-spacing:1.5px; text-transform:uppercase; } h2 { margin:12px 0 34px; font-size:clamp(29px,4vw,43px); letter-spacing:-1.5px; }
+    .stats,.expertise,.journey,.projects { display:grid; gap:16px; } .stats { grid-template-columns:repeat(3,1fr); }.card { padding:25px; background:linear-gradient(145deg,rgba(19,49,66,.8),rgba(9,27,40,.85)); border:1px solid var(--line); border-radius:14px; } .metric { display:block; font-size:31px; font-weight:800; color:var(--aqua); margin-bottom:4px; }.card p,.card li { color:var(--muted); font-size:14px; line-height:1.65; margin:0; } .card h3 { margin:12px 0 9px; font-size:18px; } .icon { font-size:25px; }
+    .expertise { grid-template-columns:repeat(2,1fr); }.expertise .card { min-height:180px; }.tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }.tag { padding:6px 9px; border-radius:6px; background:rgba(87,230,224,.09); color:#c7faf6; border:1px solid rgba(87,230,224,.18); font:12px 'DM Mono',monospace; }
+    .journey { grid-template-columns:repeat(3,1fr); position:relative; }.step { position:relative; }.step-number { font:500 12px 'DM Mono',monospace; color:var(--aqua); }.step h3 { font-size:19px; margin:10px 0; }.step p { color:var(--muted); line-height:1.65; font-size:14px; }.project-note { color:var(--muted); max-width:680px; line-height:1.7; margin:-18px 0 26px; }.projects { grid-template-columns:repeat(3,1fr); }.project { min-height:236px; display:flex; flex-direction:column; justify-content:space-between; }.project .status { color:var(--aqua); font:12px 'DM Mono',monospace; }.project h3 { font-size:19px; margin:12px 0 8px; }.project a { margin-top:20px; color:var(--aqua); font-size:14px; font-weight:700; }
+    .contact { text-align:center; padding:100px 0; }.contact p { color:var(--muted); max-width:550px; margin:0 auto 28px; line-height:1.7; }.contact .actions { justify-content:center; } footer { padding:25px 0; color:#78909c; font-size:12px; font-family:'DM Mono',monospace; text-align:center; border-top:1px solid var(--line); }
+    @media(max-width:780px) { .nav-links { display:none; }.hero { grid-template-columns:1fr; padding-top:70px; gap:35px; }.stats,.journey,.projects,.expertise { grid-template-columns:1fr; } h1 { letter-spacing:-2px; }.hero p { font-size:16px; } section { padding:65px 0; } }
+  </style>
 </head>
-
 <body>
-    <div class="coming-soon-container">
-        <h1>Radhe Radhe </h1>
-        <h2>Portfolio Website Coming Soon</h2><br><br><br>
-        <p><b>Stay tuned for the launch of my new portfolio website.</b></p>
-    </div>
-</body>
+  <header class="container"><nav><a class="brand" href="#home">SY / QA</a><div class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></header>
+  <main>
+    <section class="hero container" id="home">
+      <div><div class="eyebrow">Software Test Engineer / QA Engineer</div><h1>Hi, I’m <span>Sagar.</span><br />I test what keeps us connected.</h1><p>Test Engineer with 2+ years of experience in mobile devices, modems, networks, RF, and connectivity validation—now building deeper expertise in software QA and test automation.</p><div class="actions"><a class="button primary" href="#contact">Let’s connect <span>→</span></a><a class="button secondary" href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
+      <div class="terminal" aria-label="Testing profile summary"><div class="terminal-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="terminal-body"><span class="prompt">sagar@qa</span>:<span class="blue">~</span>$ profile --summary<br /><br /><span class="dim">role:</span> Software Test Engineer / QA Engineer<br /><span class="dim">domain:</span> Mobile • Modem • Network • RF<br /><span class="dim">technologies:</span> 4G/LTE • 5G NR • UE<br /><span class="dim">toolkit:</span> QXDM • ELT • Wireshark • ADB<br /><span class="dim">now_learning:</span> <span id="typing">Python</span><span class="prompt">_</span></div></div>
+    </section>
 
+    <section id="about"><div class="container"><div class="section-label">01 / About</div><h2>Quality is where domain knowledge meets curiosity.</h2><div class="stats"><article class="card"><span class="metric">2+</span><p>Years of hands-on testing experience across mobile, modem, network, and connectivity validation.</p></article><article class="card"><span class="metric">3+</span><p>Full-fledged projects delivered with rigorous testing, reporting, and release validation.</p></article><article class="card"><span class="metric">6</span><p>Team members coordinated and supported during project delivery and validation cycles.</p></article></div></div></section>
+
+    <section id="expertise"><div class="container"><div class="section-label">02 / Expertise</div><h2>My testing foundation.</h2><div class="expertise"><article class="card"><div class="icon">📡</div><h3>Network & Modem Validation</h3><p>Hands-on validation of real-device and real-network behavior from registration to end-to-end call flows.</p><div class="tags"><span class="tag">4G/LTE</span><span class="tag">5G NR</span><span class="tag">UE Testing</span><span class="tag">Attach/Detach</span></div></article><article class="card"><div class="icon">📶</div><h3>RF & Connectivity Testing</h3><p>Focused on conformance, performance, carrier aggregation, DSS, and reliable connectivity experiences.</p><div class="tags"><span class="tag">RF</span><span class="tag">5G CA</span><span class="tag">DSS</span><span class="tag">Performance</span></div></article><article class="card"><div class="icon">⚙️</div><h3>Device & Chipset Platforms</h3><p>Practical exposure to chipset-based validation, firmware flashing, tracing, and basic log investigation.</p><div class="tags"><span class="tag">Qualcomm</span><span class="tag">MediaTek</span><span class="tag">UNISOC</span><span class="tag">Firmware</span></div></article><article class="card"><div class="icon">🧰</div><h3>QA Tooling & Delivery</h3><p>Structured testing, regression validation, clear bug reporting, and productive developer coordination.</p><div class="tags"><span class="tag">QXDM</span><span class="tag">ELT</span><span class="tag">Wireshark</span><span class="tag">ADB</span></div></article></div></div></section>
+
+    <section id="journey"><div class="container"><div class="section-label">03 / Direction</div><h2>From specialized testing to software quality engineering.</h2><div class="journey"><article class="step"><div class="step-number">01 — FOUNDATION</div><h3>Mobile & Network QA</h3><p>Applying deep modem, RF, chipset, and connectivity knowledge to deliver dependable mobile experiences.</p></article><article class="step"><div class="step-number">02 — BUILDING</div><h3>Automation Skills</h3><p>Strengthening Python, Playwright, software testing fundamentals, web QA, and API testing concepts.</p></article><article class="step"><div class="step-number">03 — NEXT</div><h3>Quality Engineering</h3><p>Moving toward Software QA, Test Automation, Mobile Automation, and suitable SDET opportunities.</p></article></div></div></section>
+
+    <section id="projects"><div class="container"><div class="section-label">04 / Portfolio in progress</div><h2>What I’m building next.</h2><p class="project-note">These are my upcoming portfolio projects. They will demonstrate how I apply my testing knowledge in software and automation work.</p><div class="projects"><article class="card project"><div><div class="status">PLANNED PROJECT / 01</div><h3>Playwright Web Automation</h3><p>A maintainable end-to-end framework using Page Object Model, screenshots on failure, and test reporting.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article><article class="card project"><div><div class="status">PLANNED PROJECT / 02</div><h3>Python API Test Suite</h3><p>API validation with structured test cases, assertions, error scenarios, and clear test documentation.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article><article class="card project"><div><div class="status">PLANNED PROJECT / 03</div><h3>Mobile QA Case Study</h3><p>A public, non-confidential showcase of test scenarios, ADB checks, defect reporting, and test strategy.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article></div></div></section>
+
+    <section class="contact container" id="contact"><div class="section-label">05 / Contact</div><h2>Let’s build reliable experiences.</h2><p>Open to Software Test Engineer, QA Engineer, Test Automation Engineer, Mobile Test Engineer, Modem Test Engineer, Network Test Engineer, Connectivity Test Engineer, and suitable SDET roles.</p><div class="actions"><a class="button primary" href="mailto:sagartdl2002@gmail.com">Email me <span>↗</span></a><a class="button secondary" href="https://www.linkedin.com/in/sagarydv002/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div></section>
+  </main>
+  <footer>© <span id="year"></span> Sagar Yadav · Built with a quality-first mindset.</footer>
+  <script>
+    const skills=['Python','Playwright','API testing','QA automation','AI for QA']; let index=0; const target=document.getElementById('typing');
+    setInterval(()=>{index=(index+1)%skills.length; target.style.opacity=0; setTimeout(()=>{target.textContent=skills[index];target.style.opacity=1;},180);},2200);
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
 </html>
