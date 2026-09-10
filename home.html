@@ -5,9 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sagar Yadav — Software Test Engineer and QA Engineer with mobile modem, network, RF, and connectivity testing expertise." />
   <title>Sagar Yadav | Software Test Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307131e'/%3E%3Ctext x='50' y='66' font-family='monospace' font-size='46' font-weight='700' fill='%2357e6e0' text-anchor='middle'%3ESY%3C/text%3E%3C/svg%3E" />
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sagar Yadav | Software Test Engineer" />
+  <meta property="og:description" content="Test Engineer with 2+ years in mobile, modem, network, RF, and connectivity validation — now building software QA and automation skills." />
+  <meta property="og:url" content="https://sagarydv002.netlify.app/" />
+  <meta property="og:image" content="https://sagarydv002.netlify.app/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sagar Yadav | Software Test Engineer" />
+  <meta name="twitter:description" content="Test Engineer with 2+ years in mobile, modem, network, RF, and connectivity validation." />
+  <meta name="twitter:image" content="https://sagarydv002.netlify.app/assets/og-image.png" />
+  <!-- TODO: replace YOURDOMAIN.COM above with your real domain, and add a 1200x630 assets/og-image.png -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sagar Yadav",
+    "jobTitle": "Software Test Engineer",
+    "url": "https://sagarydv002.netlify.app/",
+    "sameAs": [
+      "https://github.com/sagarydv002",
+      "https://www.linkedin.com/in/sagarydv002/"
+    ],
+    "knowsAbout": ["4G/LTE", "5G NR", "Mobile QA", "RF Testing", "Test Automation", "Python", "Playwright"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!--
+    Privacy-friendly analytics (Plausible): no cookies, no personal data collected,
+    and it's fully blocked by nothing since it's not a tracker under GDPR/CCPA.
+    1. Sign up at https://plausible.io (or self-host it — it's open source) and add this domain.
+    2. Uncomment the line below and replace YOURDOMAIN.COM with your real domain.
+    Until then this stays commented out and the site collects zero analytics.
+  -->
+  <!-- <script defer data-domain="YOURDOMAIN.COM" src="https://plausible.io/js/script.js"></script> -->
   <style>
     :root { --bg:#07131e; --surface:#0c1f2d; --surface-2:#102a3b; --text:#f1f8fb; --muted:#a9bdc8; --aqua:#57e6e0; --blue:#5bbcff; --line:rgba(171,224,237,.16); }
     * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--text); background:var(--bg); font-family:Manrope,Arial,sans-serif; overflow-x:hidden; }
@@ -23,16 +57,98 @@
     .journey { grid-template-columns:repeat(3,1fr); position:relative; }.step { position:relative; }.step-number { font:500 12px 'DM Mono',monospace; color:var(--aqua); }.step h3 { font-size:19px; margin:10px 0; }.step p { color:var(--muted); line-height:1.65; font-size:14px; }.learning { display:grid; grid-template-columns:1fr 1fr; gap:14px; }.learning .card { padding:19px 22px; }.learning-top { display:flex; justify-content:space-between; align-items:center; gap:15px; font-size:14px; font-weight:700; }.learning-top span { color:var(--aqua); font:12px 'DM Mono',monospace; }.bar { height:7px; margin-top:15px; border-radius:8px; background:#173344; overflow:hidden; }.bar i { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--aqua),var(--blue)); }.project-note { color:var(--muted); max-width:680px; line-height:1.7; margin:-18px 0 20px; }.filters { display:flex; flex-wrap:wrap; gap:9px; margin-bottom:20px; }.filter { cursor:pointer; padding:8px 12px; color:var(--muted); border:1px solid var(--line); background:transparent; border-radius:7px; font:12px 'DM Mono',monospace; }.filter.active,.filter:hover { background:rgba(87,230,224,.12); border-color:var(--aqua); color:var(--aqua); }.projects { grid-template-columns:repeat(3,1fr); }.project { min-height:236px; display:flex; flex-direction:column; justify-content:space-between; transition:.25s ease; }.project.hidden { display:none; }.project:hover { transform:translateY(-5px); border-color:rgba(87,230,224,.48); }.project .status { color:var(--aqua); font:12px 'DM Mono',monospace; }.project h3 { font-size:19px; margin:12px 0 8px; }.project a { margin-top:20px; color:var(--aqua); font-size:14px; font-weight:700; }
     .roadmap { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }.roadmap details { border:1px solid var(--line); border-radius:10px; background:rgba(12,34,48,.7); transition:.2s ease; }.roadmap details[open] { border-color:rgba(87,230,224,.48); }.roadmap summary { list-style:none; cursor:pointer; padding:18px; display:flex; align-items:center; gap:12px; font-size:15px; font-weight:700; }.roadmap summary::-webkit-details-marker { display:none; }.roadmap summary::after { content:'+'; margin-left:auto; color:var(--aqua); font:20px 'DM Mono',monospace; }.roadmap details[open] summary::after { content:'−'; }.roadmap .number { color:var(--aqua); font:12px 'DM Mono',monospace; }.roadmap p { margin:0; padding:0 18px 18px 51px; color:var(--muted); font-size:14px; line-height:1.65; }.contact { text-align:center; padding:100px 0; }.contact p { color:var(--muted); max-width:550px; margin:0 auto 28px; line-height:1.7; }.contact .actions { justify-content:center; }.contact-form { width:min(620px,100%); margin:35px auto 0; display:grid; gap:11px; text-align:left; }.form-row { display:grid; grid-template-columns:1fr 1fr; gap:11px; }.contact-form input,.contact-form textarea { width:100%; padding:13px 14px; color:var(--text); background:rgba(11,33,47,.8); border:1px solid var(--line); border-radius:8px; font:14px Manrope,sans-serif; }.contact-form textarea { min-height:110px; resize:vertical; }.contact-form input:focus,.contact-form textarea:focus { outline:none; border-color:var(--aqua); box-shadow:0 0 0 3px rgba(87,230,224,.1); }.contact-form button { justify-self:center; border:0; cursor:pointer; }.copy-email { cursor:pointer; background:transparent; border:0; padding:0; color:var(--muted); font:12px 'DM Mono',monospace; }.copy-email:hover { color:var(--aqua); } footer { padding:25px 0; color:#78909c; font-size:12px; font-family:'DM Mono',monospace; text-align:center; border-top:1px solid var(--line); }
     .reveal { opacity:0; transform:translateY(22px); transition:opacity .65s ease,transform .65s ease; }.reveal.visible { opacity:1; transform:translateY(0); }.top { position:fixed; right:24px; bottom:24px; width:43px; height:43px; border:1px solid rgba(87,230,224,.45); border-radius:10px; display:grid; place-items:center; background:rgba(8,29,42,.9); color:var(--aqua); font-size:20px; opacity:0; pointer-events:none; transform:translateY(10px); transition:.25s ease; box-shadow:0 12px 30px rgba(0,0,0,.22); }.top.show { opacity:1; pointer-events:auto; transform:translateY(0); }.top:hover { background:var(--aqua); color:#062029; }
-    @media(max-width:780px) { .menu-toggle { display:block; }.nav-links { display:none; position:absolute; left:20px; right:20px; top:68px; padding:16px; background:#0b2231; border:1px solid var(--line); border-radius:10px; flex-direction:column; gap:5px; z-index:3; }.nav-links.open { display:flex; }.hero { grid-template-columns:1fr; padding-top:70px; gap:35px; }.stats,.journey,.projects,.expertise,.learning,.form-row,.roadmap { grid-template-columns:1fr; } h1 { letter-spacing:-2px; }.hero p { font-size:16px; } section { padding:65px 0; } } @media(prefers-reduced-motion:reduce) { *,html { scroll-behavior:auto!important; animation:none!important; transition:none!important; } .reveal { opacity:1; transform:none; } }
+    /* --- Résumé strip --- */
+    .resume-strip { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px; padding:22px 26px; }
+    .resume-strip .meta { color:var(--muted); font-size:13px; }
+    .resume-strip .meta strong { color:var(--text); display:block; font-size:16px; margin-bottom:4px; }
+
+    /* --- Case studies (project detail accordion) --- */
+    .case-study { grid-column:1/-1; display:block; padding:0; overflow:hidden; }
+    .case-study summary { list-style:none; cursor:pointer; padding:22px 25px; display:flex; align-items:center; gap:16px; }
+    .case-study summary::-webkit-details-marker { display:none; }
+    .case-study summary::after { content:'View case study +'; margin-left:auto; color:var(--aqua); font:12px 'DM Mono',monospace; white-space:nowrap; }
+    .case-study[open] summary::after { content:'Hide case study −'; }
+    .case-study .status { color:var(--aqua); font:12px 'DM Mono',monospace; }
+    .case-study summary h3 { margin:0; font-size:18px; }
+    .case-study-body { padding:0 25px 26px; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; border-top:1px solid var(--line); padding-top:20px; }
+    .case-study-body h4 { margin:0 0 6px; font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--aqua); font-family:'DM Mono',monospace; font-weight:500; }
+    .case-study-body p,.case-study-body li { color:var(--muted); font-size:13.5px; line-height:1.6; margin:0; }
+    .case-study-links { grid-column:1/-1; display:flex; gap:16px; padding-top:6px; border-top:1px solid var(--line); margin-top:6px; }
+    .case-study-links a { color:var(--aqua); font-size:13.5px; font-weight:700; }
+
+    /* --- Certifications --- */
+    .certifications { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .cert-card { display:flex; gap:14px; align-items:flex-start; }
+    .cert-badge { flex:none; width:44px; height:44px; border-radius:10px; background:rgba(87,230,224,.1); border:1px solid rgba(87,230,224,.2); display:grid; place-items:center; font-size:20px; }
+    .cert-card h3 { font-size:16px; margin:0 0 4px; }
+    .cert-card .issuer { color:var(--muted); font-size:13px; margin-bottom:6px; }
+    .cert-card .date { font:11px 'DM Mono',monospace; color:#7693a2; }
+    .cert-card a.verify { display:inline-block; margin-top:8px; color:var(--aqua); font-size:12px; font-weight:700; }
+    .empty-note { grid-column:1/-1; color:var(--muted); font-size:14px; border:1px dashed var(--line); border-radius:12px; padding:20px; }
+
+    /* --- Test artefact gallery --- */
+    .artefacts { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .artefact-card .kind { color:var(--blue); font:11px 'DM Mono',monospace; text-transform:uppercase; letter-spacing:1px; }
+    .artefact-card h3 { font-size:16px; margin:10px 0 8px; }
+    .artefact-card a { display:inline-block; margin-top:14px; color:var(--aqua); font-size:13px; font-weight:700; }
+
+    /* --- GitHub highlights --- */
+    .gh-highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; min-height:60px; }
+    .gh-card h3 { font-size:16px; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+    .gh-card .gh-stats { display:flex; gap:14px; margin-top:14px; font:12px 'DM Mono',monospace; color:var(--muted); }
+    .gh-status { grid-column:1/-1; color:var(--muted); font-size:13px; font-family:'DM Mono',monospace; }
+
+    /* --- Video walkthroughs --- */
+    .videos { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    .video-card { padding:0; overflow:hidden; }
+    .video-frame { position:relative; aspect-ratio:16/9; background:#04101a; cursor:pointer; overflow:hidden; }
+    .video-frame img { width:100%; height:100%; object-fit:cover; display:block; opacity:.75; transition:.2s ease; }
+    .video-frame:hover img { opacity:.95; }
+    .video-frame .play-button { position:absolute; inset:0; margin:auto; width:56px; height:56px; border-radius:50%; background:rgba(87,230,224,.92); color:#062029; display:grid; place-items:center; font-size:18px; }
+    .video-frame iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .video-card .video-meta { padding:16px 18px; }
+    .video-card h3 { font-size:15px; margin:0 0 4px; }
+    .video-card p { font-size:13px; }
+
+    /* --- Blog --- */
+    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .blog-card .date { font:11px 'DM Mono',monospace; color:var(--aqua); }
+    .blog-card h3 { font-size:17px; margin:10px 0 8px; }
+    .blog-card a.read-more { display:inline-block; margin-top:14px; color:var(--aqua); font-size:13px; font-weight:700; }
+
+    /* --- Testimonials --- */
+    .testimonials { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .testimonial-card p.quote { color:var(--text); font-size:14.5px; line-height:1.7; font-style:italic; }
+    .testimonial-card .person { display:flex; align-items:center; gap:10px; margin-top:16px; }
+    .testimonial-card .avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,var(--aqua),var(--blue)); display:grid; place-items:center; color:#062029; font-weight:800; font-size:13px; flex:none; }
+    .testimonial-card .person strong { display:block; font-size:13px; }
+    .testimonial-card .person span { display:block; font-size:12px; color:var(--muted); }
+
+    /* --- Contact form status + privacy note --- */
+    .form-status { min-height:20px; font:13px 'DM Mono',monospace; color:var(--aqua); }
+    .privacy-note { margin-top:18px; color:#7693a2; font-size:12px; max-width:550px; margin-left:auto; margin-right:auto; }
+    .hp-field { position:absolute; left:-9999px; opacity:0; pointer-events:none; }
+
+    @media(max-width:780px) { .menu-toggle { display:block; }.nav-links { display:none; position:absolute; left:20px; right:20px; top:68px; padding:16px; background:#0b2231; border:1px solid var(--line); border-radius:10px; flex-direction:column; gap:5px; z-index:3; }.nav-links.open { display:flex; }.hero { grid-template-columns:1fr; padding-top:70px; gap:35px; }.stats,.journey,.projects,.expertise,.learning,.form-row,.roadmap,.certifications,.artefacts,.gh-highlights,.videos,.blog-grid,.testimonials { grid-template-columns:1fr; } .case-study-body { grid-template-columns:1fr; } .resume-strip { flex-direction:column; align-items:flex-start; } h1 { letter-spacing:-2px; }.hero p { font-size:16px; } section { padding:65px 0; } } @media(prefers-reduced-motion:reduce) { *,html { scroll-behavior:auto!important; animation:none!important; transition:none!important; } .reveal { opacity:1; transform:none; } }
   </style>
 </head>
 <body>
   <a class="skip" href="#main-content">Skip to content</a>
-  <header class="container"><nav><a class="brand" href="#home">SY / QA</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#roadmap">Roadmap</a><a href="#contact">Contact</a></div></nav></header>
+  <header class="container"><nav><a class="brand" href="#home">SY / QA</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Work</a><a href="#certifications">Certs</a><a href="#blog">Blog</a><a href="#contact">Contact</a></div></nav></header>
   <main id="main-content">
     <section class="hero container" id="home">
-      <div><div class="eyebrow">Software Test Engineer / QA Engineer</div><h1>Hi, I’m <span>Sagar.</span><br />I test what keeps us connected.</h1><p>Test Engineer with 2+ years of experience in mobile devices, modems, networks, RF, and connectivity validation—now building deeper expertise in software QA and test automation.</p><div class="availability"><i class="pulse"></i> Open to relevant QA & testing opportunities</div><div class="actions"><a class="button primary" href="#contact">Let’s connect <span>→</span></a><a class="button secondary" href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
+      <div><div class="eyebrow">Software Test Engineer / QA Engineer</div><h1>Hi, I’m <span>Sagar.</span><br />I test what keeps us connected.</h1><p>Test Engineer with 2+ years of experience in mobile devices, modems, networks, RF, and connectivity validation—now building deeper expertise in software QA and test automation.</p><div class="availability"><i class="pulse"></i> Open to relevant QA & testing opportunities</div><div class="actions"><a class="button primary" href="#contact">Let’s connect <span>→</span></a><a class="button secondary" href="assets/sagar-yadav-resume.pdf" download>Download résumé <span>↓</span></a><a class="button secondary" href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
       <div class="terminal" aria-label="Testing profile summary"><div class="terminal-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="terminal-body"><span class="prompt">sagar@qa</span>:<span class="blue">~</span>$ profile --summary<br /><br /><span class="dim">role:</span> Software Test Engineer / QA Engineer<br /><span class="dim">domain:</span> Mobile • Modem • Network • RF<br /><span class="dim">technologies:</span> 4G/LTE • 5G NR • UE<br /><span class="dim">toolkit:</span> QXDM • ELT • Wireshark • ADB<br /><span class="dim">now_learning:</span> <span id="typing">Python</span><span class="prompt">_</span></div></div>
+    </section>
+
+    <section style="padding:26px 0;">
+      <div class="container reveal">
+        <div class="card resume-strip">
+          <div class="meta"><strong>ATS-ready résumé, updated regularly</strong>Two pages · testing domain focus · honest and specific about scope and impact.</div>
+          <!-- TODO: replace with the real PDF at assets/sagar-yadav-resume.pdf and update the date below -->
+          <a class="button primary" href="assets/sagar-yadav-resume.pdf" download>Download résumé (PDF) <span>↓</span></a>
+        </div>
+      </div>
     </section>
 
     <section id="about"><div class="container reveal"><div class="section-label">01 / About</div><h2>Quality is where domain knowledge meets curiosity.</h2><div class="stats"><article class="card"><span class="metric">2+</span><p>Years of hands-on testing experience across mobile, modem, network, and connectivity validation.</p></article><article class="card"><span class="metric">3+</span><p>Full-fledged projects delivered with rigorous testing, reporting, and release validation.</p></article><article class="card"><span class="metric">6</span><p>Team members coordinated and supported during project delivery and validation cycles.</p></article></div></div></section>
@@ -43,11 +159,72 @@
 
     <section><div class="container reveal"><div class="section-label">04 / Learning dashboard</div><h2>Building automation capability with intention.</h2><div class="learning"><article class="card"><div class="learning-top">Software Testing <span>IN PROGRESS</span></div><div class="bar"><i style="width:88%"></i></div></article><article class="card"><div class="learning-top">Python <span>IN PROGRESS</span></div><div class="bar"><i style="width:68%"></i></div></article><article class="card"><div class="learning-top">Playwright <span>IN PROGRESS</span></div><div class="bar"><i style="width:56%"></i></div></article><article class="card"><div class="learning-top">API & Web Testing <span>IN PROGRESS</span></div><div class="bar"><i style="width:58%"></i></div></article></div></div></section>
 
-    <section id="projects"><div class="container reveal"><div class="section-label">05 / Portfolio in progress</div><h2>What I’m building next.</h2><p class="project-note">These are my upcoming portfolio projects. They will demonstrate how I apply my testing knowledge in software and automation work.</p><div class="filters" aria-label="Project filters"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="automation">Automation</button><button class="filter" data-filter="api">API & web</button><button class="filter" data-filter="mobile">Mobile QA</button></div><div class="projects"><article class="card project" data-category="automation"><div><div class="status">PLANNED PROJECT / 01</div><h3>Playwright Web Automation</h3><p>A maintainable end-to-end framework using Page Object Model, screenshots on failure, and test reporting.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article><article class="card project" data-category="api"><div><div class="status">PLANNED PROJECT / 02</div><h3>Python API Test Suite</h3><p>API validation with structured test cases, assertions, error scenarios, and clear test documentation.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article><article class="card project" data-category="mobile"><div><div class="status">PLANNED PROJECT / 03</div><h3>Mobile QA Case Study</h3><p>A public, non-confidential showcase of test scenarios, ADB checks, defect reporting, and test strategy.</p></div><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Follow progress on GitHub →</a></article></div></div></section>
+    <!-- ============ 05 / FEATURED PROJECT CASE STUDIES ============ -->
+    <!-- TODO: swap in your real projects once built; each <details> is one case study -->
+    <section id="projects"><div class="container reveal"><div class="section-label">05 / Case studies</div><h2>Featured project case studies.</h2><p class="project-note">Full write-ups of the projects I'm building to demonstrate testing and automation skill, not just a link to a repo — objective, approach, tools, and outcome for each.</p><div class="filters" aria-label="Project filters"><button class="filter active" data-filter="all">All work</button><button class="filter" data-filter="automation">Automation</button><button class="filter" data-filter="api">API & web</button><button class="filter" data-filter="mobile">Mobile QA</button></div><div class="projects">
 
-    <section id="roadmap"><div class="container reveal"><div class="section-label">06 / Future roadmap</div><h2>Ten upgrades planned for this portfolio.</h2><div class="roadmap"><details><summary><span class="number">01</span> Featured project case studies</summary><p>Detailed pages for real testing projects with objectives, test strategy, tools, evidence, and outcomes.</p></details><details><summary><span class="number">02</span> Downloadable resume</summary><p>A dedicated, current resume download once the final ATS-ready version is prepared.</p></details><details><summary><span class="number">03</span> Certifications showcase</summary><p>A verified section for completed QA, Python, automation, cloud, or networking certifications.</p></details><details><summary><span class="number">04</span> Test artefact gallery</summary><p>Sanitized examples of test cases, bug reports, test plans, and automation reports—never confidential work data.</p></details><details><summary><span class="number">05</span> GitHub project highlights</summary><p>Featured repositories with technology, purpose, setup instructions, and direct source links.</p></details><details><summary><span class="number">06</span> Automation demo videos</summary><p>Short walkthroughs of Playwright, API, or mobile QA projects once they are complete.</p></details><details><summary><span class="number">07</span> Testing insights blog</summary><p>Practical notes on mobile validation, network behavior, defect quality, and automation learning.</p></details><details><summary><span class="number">08</span> Professional recommendations</summary><p>Optional testimonials from colleagues or leads, added only with their permission.</p></details><details><summary><span class="number">09</span> Contact form service</summary><p>A production contact service with spam protection when you are ready to connect a safe email provider.</p></details><details><summary><span class="number">10</span> Privacy-friendly analytics</summary><p>Simple, consent-aware analytics to understand website visits without collecting unnecessary data.</p></details></div></div></section>
+      <details class="card project case-study" data-category="automation"><summary><div><div class="status">PROJECT / 01</div><h3>Playwright Web Automation Framework</h3></div></summary><div class="case-study-body"><div><h4>Objective</h4><p>Build a maintainable end-to-end regression suite for a sample web app instead of one-off scripts.</p></div><div><h4>Approach</h4><p>Page Object Model to isolate locators from test logic; data-driven test cases; CI-friendly config.</p></div><div><h4>Tools</h4><p>Playwright, TypeScript, GitHub Actions, Allure reporting</p></div><div><h4>Outcome</h4><p>Screenshots and trace capture on failure, HTML test report, and a suite that runs on every push.</p></div><div class="case-study-links"><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Source on GitHub →</a><a href="#videos">Watch the walkthrough →</a></div></div></details>
 
-    <section class="contact container reveal" id="contact"><div class="section-label">07 / Contact</div><h2>Let’s build reliable experiences.</h2><p>Open to Software Test Engineer, QA Engineer, Test Automation Engineer, Mobile Test Engineer, Modem Test Engineer, Network Test Engineer, Connectivity Test Engineer, and suitable SDET roles.</p><div class="actions"><a class="button primary" href="mailto:sagartdl2002@gmail.com">Email me <span>↗</span></a><a class="button secondary" href="https://www.linkedin.com/in/sagarydv002/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div><button class="copy-email" type="button">Copy email address</button><form class="contact-form" id="contact-form"><div class="form-row"><input id="name" required placeholder="Your name" aria-label="Your name" /><input id="email" type="email" required placeholder="Your email" aria-label="Your email" /></div><textarea id="message" required placeholder="Your message" aria-label="Your message"></textarea><button class="button primary" type="submit">Compose email <span>↗</span></button></form></section>
+      <details class="card project case-study" data-category="api"><summary><div><div class="status">PROJECT / 02</div><h3>Python API Test Suite</h3></div></summary><div class="case-study-body"><div><h4>Objective</h4><p>Validate a REST API's core contract — happy paths, edge cases, and error handling — without a UI.</p></div><div><h4>Approach</h4><p>Structured test cases with clear pre-conditions and assertions; fixtures for reusable test data.</p></div><div><h4>Tools</h4><p>Python, pytest, requests, JSON schema validation</p></div><div><h4>Outcome</h4><p>A documented suite covering status codes, payload shape, and negative scenarios with readable reports.</p></div><div class="case-study-links"><a href="https://github.com/sagarydv002" target="_blank" rel="noreferrer">Source on GitHub →</a></div></div></details>
+
+      <details class="card project case-study" data-category="mobile"><summary><div><div class="status">PROJECT / 03</div><h3>Mobile QA Case Study</h3></div></summary><div class="case-study-body"><div><h4>Objective</h4><p>Show, publicly and without confidential data, how I actually test a mobile device end to end.</p></div><div><h4>Approach</h4><p>Sanitized test scenarios covering attach/detach, network switching, and connectivity edge cases.</p></div><div><h4>Tools</h4><p>ADB, QXDM-style log review (sanitized), a defect-reporting template</p></div><div><h4>Outcome</h4><p>A shareable test plan, a sample defect report, and a short recording of the test session.</p></div><div class="case-study-links"><a href="#artefacts">See the artefacts →</a></div></div></details>
+
+    </div></div></section>
+
+    <!-- ============ GITHUB PROJECT HIGHLIGHTS (live via GitHub API) ============ -->
+    <section><div class="container reveal"><div class="section-label">05a / From GitHub</div><h2>Latest from my repositories.</h2><p class="project-note">Pulled live from GitHub, so this stays current without me editing this page every time.</p><div class="gh-highlights" id="gh-highlights"><p class="gh-status">Loading repositories…</p></div></div></section>
+
+    <!-- TODO: once you actually earn a certification, move it into a full .cert-card (issuer, date, verify link). -->
+    <section id="certifications"><div class="container reveal"><div class="section-label">06 / Certifications</div><h2>Verified learning, not just claimed learning.</h2><p class="project-note">Nothing completed yet — this section stays empty of real cards until a certification is actually earned and verifiable. Currently studying toward:</p><div class="tags">
+      <span class="tag">ISTQB Foundation Level</span>
+      <span class="tag">Python for Everybody (Coursera)</span>
+      <span class="tag">Playwright, project-verified</span>
+    </div>
+    </div></section>
+
+    <!--
+      PROFESSIONAL RECOMMENDATIONS — intentionally left commented out.
+      Do not fill this with placeholder names/quotes; it reads worse than having no section at all.
+      When a colleague or lead agrees to be featured, uncomment this block and replace one card per person:
+
+      <section><div class="container reveal"><div class="section-label">10 / Recommendations</div><h2>What colleagues say.</h2><div class="testimonials">
+        <article class="card testimonial-card"><p class="quote">"Real quote goes here."</p><div class="person"><div class="avatar">AB</div><div><strong>Real Name</strong><span>Role, company</span></div></div></article>
+      </div></div></section>
+    -->
+
+
+    <!-- ============ TEST ARTEFACT GALLERY ============ -->
+    <!-- TODO: add real sanitized files under an /assets/artefacts/ folder and link them below. Never publish confidential employer data. -->
+    <section id="artefacts"><div class="container reveal"><div class="section-label">07 / Artefacts</div><h2>Sanitized test artefacts.</h2><p class="project-note">Real examples of how I document testing work — no confidential or employer-owned data, ever.</p><div class="artefacts">
+      <article class="card artefact-card"><div class="kind">Test case sheet</div><h3>Mobile connectivity test cases</h3><p>A sample set of attach/detach and network-switch test cases with steps and expected results.</p><a href="assets/artefacts/test-cases-sample.pdf" download>Download sample ↓</a></article>
+      <article class="card artefact-card"><div class="kind">Bug report</div><h3>Sample defect report</h3><p>A clearly written defect report template: repro steps, severity, logs, and environment.</p><a href="assets/artefacts/bug-report-template.pdf" download>Download sample ↓</a></article>
+      <article class="card artefact-card"><div class="kind">Test plan</div><h3>Regression test plan</h3><p>Scope, entry/exit criteria, and coverage matrix for a sanitized regression cycle.</p><a href="assets/artefacts/test-plan-sample.pdf" download>Download sample ↓</a></article>
+    </div></div></section>
+
+    <!-- ============ AUTOMATION DEMO VIDEOS ============ -->
+    <!-- TODO: replace VIDEO_ID_1/2 with real YouTube video IDs once recorded. Thumbnails load a real player only on click, so nothing loads from YouTube until a visitor asks for it. -->
+    <section id="videos"><div class="container reveal"><div class="section-label">08 / Demos</div><h2>Automation demo videos.</h2><div class="videos">
+      <article class="card video-card"><div class="video-frame" data-video-id="VIDEO_ID_1" role="button" tabindex="0" aria-label="Play: Playwright framework walkthrough"><img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="" loading="lazy" /><span class="play-button">▶</span></div><div class="video-meta"><h3>Playwright framework walkthrough</h3><p>A short tour of the Page Object Model structure and a sample test run.</p></div></article>
+      <article class="card video-card"><div class="video-frame" data-video-id="VIDEO_ID_2" role="button" tabindex="0" aria-label="Play: Mobile QA session recording"><img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="" loading="lazy" /><span class="play-button">▶</span></div><div class="video-meta"><h3>Mobile QA session recording</h3><p>A walkthrough of a sanitized mobile connectivity test session using ADB.</p></div></article>
+    </div></div></section>
+
+    <!-- ============ TESTING INSIGHTS BLOG ============ -->
+    <!-- TODO: write real posts (markdown pages, or point read-more links to Dev.to/Hashnode posts) -->
+    <section id="blog"><div class="container reveal"><div class="section-label">09 / Notes</div><h2>Testing insights.</h2><div class="blog-grid">
+      <article class="card blog-card"><div class="date">Coming soon</div><h3>What attach/detach testing actually catches</h3><p>Notes on the failure modes that show up only when you test registration flows deliberately.</p><a class="read-more" href="#">Read post →</a></article>
+      <article class="card blog-card"><div class="date">Coming soon</div><h3>Writing a bug report developers don't have to chase you about</h3><p>The five details that turn a vague report into a fixable one.</p><a class="read-more" href="#">Read post →</a></article>
+      <article class="card blog-card"><div class="date">Coming soon</div><h3>Moving from manual mobile QA to automation</h3><p>What actually transfers — and what doesn't — when you pick up Playwright and Python.</p><a class="read-more" href="#">Read post →</a></article>
+    </div></div></section>
+
+    <!-- Recommendations section lives as a commented-out template near the Certifications section above, ready to uncomment once real testimonials exist. -->
+
+    <section class="contact container reveal" id="contact"><div class="section-label">11 / Contact</div><h2>Let’s build reliable experiences.</h2><p>Open to Software Test Engineer, QA Engineer, Test Automation Engineer, Mobile Test Engineer, Modem Test Engineer, Network Test Engineer, Connectivity Test Engineer, and suitable SDET roles.</p><div class="actions"><a class="button primary" href="mailto:sagartdl2002@gmail.com">Email me <span>↗</span></a><a class="button secondary" href="https://www.linkedin.com/in/sagarydv002/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div><button class="copy-email" type="button">Copy email address</button>
+      <!-- Netlify Forms: no signup or endpoint needed — Netlify detects this form at deploy time
+           because of data-netlify="true" and collects submissions in Site settings → Forms.
+           netlify-honeypot names the spam-trap field below; real visitors never see or fill it. -->
+      <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="contact" /><div class="form-row"><input id="name" name="name" required placeholder="Your name" aria-label="Your name" /><input id="email" name="email" type="email" required placeholder="Your email" aria-label="Your email" /></div><textarea id="message" name="message" required placeholder="Your message" aria-label="Your message"></textarea><input type="text" name="bot-field" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" /><button class="button primary" type="submit">Send message <span>↗</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form>
+      <p class="privacy-note">Submitting this form sends your message directly to Sagar via Netlify Forms. Nothing is stored on this site, and it's never used for anything other than replying to you.</p>
+    </section>
   </main>
   <a class="top" href="#home" aria-label="Back to top">↑</a>
   <footer>© <span id="year"></span> Sagar Yadav · Built with a quality-first mindset.</footer>
@@ -63,7 +240,57 @@
     links.forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
     document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(item=>item.classList.remove('active'));button.classList.add('active');const filter=button.dataset.filter;document.querySelectorAll('.project').forEach(project=>project.classList.toggle('hidden',filter!=='all'&&project.dataset.category!==filter));}));
     document.querySelector('.copy-email').addEventListener('click',async event=>{try{await navigator.clipboard.writeText('sagartdl2002@gmail.com');event.target.textContent='Email copied ✓';}catch{event.target.textContent='sagartdl2002@gmail.com';}setTimeout(()=>event.target.textContent='Copy email address',2200);});
-    document.getElementById('contact-form').addEventListener('submit',event=>{event.preventDefault();const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),message=document.getElementById('message').value.trim();window.location.href=`mailto:sagartdl2002@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;});
+    const contactForm=document.getElementById('contact-form'), formStatus=document.getElementById('form-status');
+    contactForm.addEventListener('submit',async event=>{
+      event.preventDefault();
+      const name=document.getElementById('name').value.trim(), email=document.getElementById('email').value.trim(), message=document.getElementById('message').value.trim();
+      const mailtoFallback=()=>{window.location.href=`mailto:sagartdl2002@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;};
+      formStatus.textContent='Sending…';
+      try{
+        const body=new URLSearchParams(new FormData(contactForm)).toString();
+        // Netlify Forms expects the encoded body posted back to the page itself, not an external endpoint.
+        const response=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body});
+        if(response.ok){formStatus.textContent='Message sent — thanks, I\'ll reply soon.';contactForm.reset();}
+        else{formStatus.textContent='Something went wrong — opening an email instead.';mailtoFallback();}
+      }catch(error){formStatus.textContent='Network issue — opening an email instead.';mailtoFallback();}
+    });
+
+    // --- GitHub project highlights: pulled live from the GitHub API, no build step needed ---
+    (async()=>{
+      const target=document.getElementById('gh-highlights');
+      try{
+        const response=await fetch('https://api.github.com/users/sagarydv002/repos?sort=updated&per_page=6');
+        if(!response.ok) throw new Error('GitHub API request failed');
+        const repos=(await response.json()).filter(repo=>!repo.fork).slice(0,3);
+        if(!repos.length){target.innerHTML='<p class="gh-status">No public repositories yet — check back soon.</p>';return;}
+        target.innerHTML=repos.map(repo=>`
+          <article class="card gh-card">
+            <h3>📦 ${repo.name}</h3>
+            <p>${repo.description?repo.description.replace(/</g,'&lt;'):'No description yet.'}</p>
+            <div class="gh-stats"><span>${repo.language||'—'}</span><span>★ ${repo.stargazers_count}</span><span>Updated ${new Date(repo.updated_at).toLocaleDateString()}</span></div>
+            <a href="${repo.html_url}" target="_blank" rel="noreferrer" style="display:inline-block;margin-top:14px;color:var(--aqua);font-size:13px;font-weight:700;">View repository →</a>
+          </article>`).join('');
+      }catch(error){
+        target.innerHTML='<p class="gh-status">Repositories will load here once this page is served over the web (GitHub API calls don\'t run from a local file).</p>';
+      }
+    })();
+
+    // --- Case studies: keep aria-expanded in sync for screen readers ---
+    document.querySelectorAll('.case-study').forEach(details=>{
+      const summary=details.querySelector('summary');
+      summary.setAttribute('aria-expanded', details.open?'true':'false');
+      details.addEventListener('toggle',()=>summary.setAttribute('aria-expanded', details.open?'true':'false'));
+    });
+
+    // --- Demo videos: load the real YouTube player only when clicked, not on page load ---
+    document.querySelectorAll('.video-frame').forEach(frame=>{
+      const load=()=>{
+        const id=frame.dataset.videoId;
+        frame.innerHTML=`<iframe src="https://www.youtube.com/embed/${id}?autoplay=1" title="Video player" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+      };
+      frame.addEventListener('click',load);
+      frame.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();load();}});
+    });
   </script>
 </body>
 </html>
